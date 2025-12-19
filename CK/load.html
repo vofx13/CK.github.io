@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #222;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress">
+        <div class="progress-bar"></div>
+    </div>
+    <div class="loading-text">Logging in...</div>
+    
+    <script>
+        // Chuyển hướng sau khi animation hoàn thành (2 giây)
+        setTimeout(function() {
+            window.location.href = "trangchu.html";
+        }, 2000); // 2000ms = 2 giây
+    </script>
+</body>
+</html>

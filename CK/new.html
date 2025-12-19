@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="glass-container">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <div class="input-group">
+                <input type="text" id="username" required>
+                <label for="username">Username</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label for="password">Password</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="confirmPassword" required>
+                <label for="confirmPassword">Confirm Password</label>
+                <span id="passwordError" class="error-message"></span>
+            </div>
+
+            <div class="terms">
+                <label>
+                    <input type="checkbox" required>I agree to the    </label>
+                    <a href="#">Terms & Conditions</a>
+            </div>
+
+            <button type="submit" class="login-btn">Register</button>
+            <div class="register-link">
+                <p>Already have an account? <a href="index.html">Login here</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const passwordError = document.getElementById('passwordError');
+
+            if (password !== confirmPassword) {
+                passwordError.textContent = "Passwords do not match!";
+                return;
+            } else {
+                passwordError.textContent = "";
+            }
+            alert('Registration successful!');
+        });
+    </script>
+</body>
+
+</html>
