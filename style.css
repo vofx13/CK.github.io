@@ -10,7 +10,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Fixed: was justify-self */
     background: url(image.png);
     animation: gradientBG 15s ease infinite;
     overflow: hidden;
@@ -37,12 +36,10 @@ body {
     position: relative;
     width: 100%;
     max-width: 400px;
-    /* Added responsiveness */
     padding: 40px;
     border-radius: 20px;
     backdrop-filter: blur(15px);
     background: rgba(255, 255, 255, 0.1);
-    /* Fixed: was rbga */
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
     z-index: 10;
@@ -249,7 +246,6 @@ body {
     }
 }
 
-/* Thêm thông báo nhỏ ở dưới */
 .loading-text {
     position: absolute;
     bottom: 20%;

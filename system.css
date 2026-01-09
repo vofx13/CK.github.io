@@ -1,3 +1,4 @@
+
 .book-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -62,7 +63,7 @@
 }
 
 .btn-read:hover {
-    background-color: var(--secondary-color);
+    background-color: #1a472a;
 }
 
 @media (max-width: 768px) {

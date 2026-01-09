@@ -1,14 +1,4 @@
-    
 
-        :root {
-            --primary-color: #2a6e3f;
-            --secondary-color: #4c9c6b;
-            --accent-color: #ff7e5f;
-            --dark-color: #1a472a;
-            --light-color: #f5f9f7;
-            --text-color: #333;
-            --text-light: #666;
-        }
 
         * {
             margin: 0;
@@ -18,7 +8,7 @@
         
         body {
             font-family: 'Open Sans', sans-serif;
-            color: var(--text-color);
+            color: #333;
             background-color: #fff;
             min-height: 100vh;
             display: flex;
@@ -30,7 +20,6 @@
             font-weight: 700;
         }
         
-        /* Navbar */
         .navbar {
             background-color: white;
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -52,7 +41,7 @@
         
         .navbar-brand {
             font-size: 1.8rem;
-            color: var(--primary-color);
+            color: #2a6e3f;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -60,7 +49,7 @@
         }
         
         .navbar-brand i {
-            color: var(--accent-color);
+            color: #ff7e5f;
             margin-right: 10px;
         }
         
@@ -74,7 +63,7 @@
         }
         
         .nav-link {
-            color: var(--dark-color);
+            color: #1a472a;
             text-decoration: none;
             font-weight: 600;
             padding: 5px 0;
@@ -83,7 +72,7 @@
         }
         
         .nav-link:hover, .nav-link.active {
-            color: var(--primary-color);
+            color: #2a6e3f;
         }
         
         .nav-link.active:after {
@@ -93,11 +82,10 @@
             left: 0;
             width: 100%;
             height: 3px;
-            background-color: var(--primary-color);
+            background-color: #2a6e3f;
             border-radius: 2px;
         }
         
-        /* Main Content */
         .main-content {
             flex: 1;
             display: flex;
@@ -111,28 +99,27 @@
         
         .hero-icon {
             font-size: 4.5rem;
-            color: var(--primary-color);
+            color:#2a6e3f;
             margin-bottom: 20px;
             animation: pulse 3s infinite ease-in-out;
         }
         
         .hero-title {
             font-size: 3rem;
-            color: var(--primary-color);
+            color: #2a6e3f;
             margin-bottom: 15px;
         }
         
         .hero-subtitle {
             font-size: 1.2rem;
-            color: var(--text-light);
+            color: #666;
             max-width: 700px;
             line-height: 1.6;
             margin-bottom: 10px;
         }
         
-        /* Footer */
         .footer {
-            background-color: var(--dark-color);
+            background-color: #1a472a;
             color: white;
             padding: 25px 0;
             text-align: center;
@@ -146,7 +133,7 @@
         
         .footer-brand {
             font-size: 1.4rem;
-            color: var(--accent-color);
+            color: #ff7e5f;
             margin-bottom: 10px;
             display: flex;
             align-items: center;
@@ -169,7 +156,6 @@
             margin-top: 15px;
         }
         
-        /* Animations */
         @keyframes pulse {
             0%, 100% {
                 transform: scale(1);

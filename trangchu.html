@@ -7,12 +7,7 @@
     <title>AnatomyExplorer - Trang Chủ</title>
     <link rel="stylesheet" href="trangchu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
 </head>
-
 <body>
     <nav class="navbar">
         <div class="nav-container">
@@ -22,8 +17,8 @@
             <ul class="nav-menu">
                 <li class="nav-item"><a href="trangchu.html" class="nav-link active">Trang chủ</a></li>
                 <li class="nav-item"><a href="tailieu.html" class="nav-link">Tài liệu</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Hệ cơ quan</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Giới thiệu</a></li>
+                <li class="nav-item"><a href="hecoquan.html" class="nav-link">Hệ cơ quan</a></li>
+                <li class="nav-item"><a href="gt.html" class="nav-link">Giới thiệu</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
             </ul>
         </div>
@@ -33,27 +28,21 @@
             <div class="hero-icon fade-in">
                 <i class="fas fa-heartbeat"></i>
             </div>
-
             <h1 class="hero-title fade-in" style="animation-delay: 0.2s;">
                 AnatomyExplorer
             </h1>
-
             <p class="hero-subtitle fade-in" style="animation-delay: 0.4s;">
                 Khám phá thế giới giải phẫu học cơ thể người một cách trực quan và chính xác.
             </p>
-
             <p class="hero-subtitle fade-in" style="animation-delay: 0.6s;">
                 Nền tảng học tập toàn diện với tài liệu chất lượng cao, hình ảnh minh họa chi tiết
                 và thông tin chính xác về các hệ cơ quan trong cơ thể.
             </p>
-
             <p class="hero-subtitle fade-in" style="animation-delay: 0.8s;">
                 Dành cho sinh viên y khoa, giáo viên và những người đam mê tìm hiểu về cơ thể con người.
             </p>
         </div>
     </main>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
@@ -67,24 +56,18 @@
             </div>
         </div>
     </footer>
-
 <script>
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
             link.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
-
-                // Nếu link là "#", chỉ đổi màu nút và chặn cuộn trang
                 if (href === '#' || href === '') {
                     e.preventDefault();
                     navLinks.forEach(l => l.classList.remove('active'));
                     this.classList.add('active');
                 } 
-                // Nếu link dẫn tới một trang .html, để trình duyệt chuyển trang tự nhiên
             });
         });
 </script>
-
 </body>
-
 </html>
