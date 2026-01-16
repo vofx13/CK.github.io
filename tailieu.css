@@ -1,4 +1,4 @@
-.book-grid {
+.luoisach {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -8,7 +8,7 @@
     padding: 20px 0;
 }
 
-.book-card {
+.thesach {
     background: white;
     border-radius: 12px;
     overflow: hidden;
@@ -18,17 +18,17 @@
     flex-direction: column;
 }
 
-.book-card:hover {
+.thesach:hover {
     transform: translateY(-10px);
 }
 
-.book-image {
+.hinhsach {
     display: block;
     margin: 0 auto;
     width: fit-content;
 }
 
-.book-info {
+.thongtinsach {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -37,12 +37,12 @@
     flex-grow: 1;
 }
 
-.book-title {
+.tieudesach {
     font-size: 1.2rem;
     color: #2a6e3f;
 }
 
-.book-desc {
+.motasach {
     font-size: 0.9rem;
     color: #666;
     line-height: 1.5;
@@ -66,7 +66,7 @@
 }
 
 @media (max-width: 768px) {
-    .book-grid {
+    .luoisach {
         grid-template-columns: 1fr;
     }
 }

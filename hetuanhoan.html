@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hệ Tuần Hoàn - AnatomyExplorer</title>
     <link rel="stylesheet" href="hetuanhoan.css">
+    <link rel="stylesheet" href="logout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -18,8 +19,13 @@
                 <li class="nav-item"><a href="tailieu.html" class="nav-link">Tài liệu</a></li>
                 <li class="nav-item"><a href="hecoquan.html" class="nav-link active">Hệ cơ quan</a></li>
                 <li class="nav-item"><a href="gt.html" class="nav-link">Giới thiệu</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
+                <li class="nav-item"><a href="lienhe.html" class="nav-link">Liên hệ</a></li>
             </ul>
+                        <div class="logout-container">
+                <a href="login.html" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -34,21 +40,21 @@
             <section class="organs-section">
                 <h2 class="section-title">Các Cơ Quan Chính</h2>
                 <div class="book-grid">
-                    <div class="book-card">
-                        <div class="book-info">
-                            <h3 class="book-title">Tim</h3>
-                            <img src="tim.png" alt="Tim" class="book-image">
-                            <p class="book-desc">Bơm máu liên tục đến toàn bộ cơ thể. Tim có 4 buồng: tâm nhĩ trái, tâm nhĩ phải, tâm thất trái, tâm thất phải.</p>
+                    <div class="thecothe">
+                        <div class="thongtin">
+                            <h3 class="cdct">Tim</h3>
+                            <img src="anh/tim.png" alt="Tim" class="book-image">
+                            <p class="mota">Bơm máu liên tục đến toàn bộ cơ thể. Tim có 4 buồng: tâm nhĩ trái, tâm nhĩ phải, tâm thất trái, tâm thất phải.</p>
                             <div class="block">
                                 <strong>Chức năng:</strong> Bơm máu giàu oxy đến cơ thể và đưa máu nghèo oxy về phổi.
                             </div>
                         </div>
                     </div>
-                    <div class="book-card">
-                        <div class="book-info">
-                            <h3 class="book-title">Động Mạch</h3>
-                            <img src="dongmach.png" alt="Động Mạch" class="book-image">
-                            <p class="book-desc">Các mạch máu dẫn máu giàu oxy từ tim đến các cơ quan. Thành động mạch dày và đàn hồi tốt.</p>
+                    <div class="thecothe">
+                        <div class="thongtin">
+                            <h3 class="cdct">Động Mạch</h3>
+                            <img src="anh/dongmach.png" alt="Động Mạch" class="book-image">
+                            <p class="mota">Các mạch máu dẫn máu giàu oxy từ tim đến các cơ quan. Thành động mạch dày và đàn hồi tốt.</p>
                             <div class="organ-detail">
                                 <div class="block">
                                 <strong>Chức năng:</strong> Vận chuyển máu giàu oxy từ tim đến các mô trong cơ thể.
@@ -56,21 +62,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="book-card">
-                        <div class="book-info">
-                            <h3 class="book-title">Tĩnh Mạch</h3>
-                            <img src="tinhmach.png" alt="Tĩnh Mạch" class="book-image" style="border-radius: 15px;">
-                            <p class="book-desc">Các mạch máu đưa máu nghèo oxy từ các cơ quan về tim. Có van ngăn máu chảy ngược.</p>
+                    <div class="thecothe">
+                        <div class="thongtin">
+                            <h3 class="cdct">Tĩnh Mạch</h3>
+                            <img src="anh/tinhmach.png" alt="Tĩnh Mạch" class="book-image" style="border-radius: 15px;">
+                            <p class="mota">Các mạch máu đưa máu nghèo oxy từ các cơ quan về tim. Có van ngăn máu chảy ngược.</p>
                             <div class="block">
                                 <strong>Chức năng:</strong> Đưa máu nghèo oxy từ các mô trở về tim.
                             </div>
                         </div>
                     </div>
-                    <div class="book-card">
-                        <div class="book-info">
-                            <h3 class="book-title">Mao Mạch</h3>
-                            <img src="maomach.png" alt="Mao Mạch" class="book-image">
-                            <p class="book-desc">Các mạch máu nhỏ nhất, nối giữa động mạch và tĩnh mạch. Nơi diễn ra trao đổi chất với tế bào.</p>
+                    <div class="thecothe">
+                        <div class="thongtin">
+                            <h3 class="cdct">Mao Mạch</h3>
+                            <img src="anh/maomach.png" alt="Mao Mạch" class="book-image">
+                            <p class="mota">Các mạch máu nhỏ nhất, nối giữa động mạch và tĩnh mạch. Nơi diễn ra trao đổi chất với tế bào.</p>
                             <div class="block">
                                 <strong>Chức năng:</strong> Trao đổi oxy, chất dinh dưỡng và chất thải với các tế bào.
                             </div>
@@ -125,7 +131,7 @@
                 Nền tảng học tập giải phẫu học trực tuyến, cung cấp kiến thức toàn diện về cấu trúc cơ thể người.
             </p>
             <div class="copyright">
-                &copy; 2023 AnatomyExplorer
+                &copy; CuoiKhoaAnatomyExplorer 2026. All rights reserved.
             </div>
         </div>
     </footer>

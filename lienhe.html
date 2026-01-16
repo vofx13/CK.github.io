@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ AnatomyExplorer</title>
+    <link rel="stylesheet" href="lienhe.css">
+    <link rel="stylesheet" href="logout.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navcontainer">
+            <a href="trangchu.html" class="navbarbrand">AnatomyExplorer</a>
+            <ul class="navmenu">
+                <li class="navitem"><a href="trangchu.html" class="navlink">Trang chủ</a></li>
+                <li class="navitem"><a href="tailieu.html" class="navlink">Tài liệu</a></li>
+                <li class="navitem"><a href="hecoquan.html" class="navlink">Hệ cơ quan</a></li>
+                <li class="navitem"><a href="gt.html" class="navlink">Giới thiệu</a></li>
+                <li class="navitem"><a href="lienhe.html" class="navlink active">Liên hệ</a></li>
+            </ul>
+                        <div class="logout-container">
+                <a href="login.html" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="maincontent">
+        <div class="container">
+            <section class="lienhehero">
+                <h1 class="lienhetieudec">Liên Hệ Với Chúng Tôi</h1>
+                <p class="lienhetieude">Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn</p>
+            </section>
+
+            <div class="lienhecontainer">
+                <div class="lienheinfo">
+                    <div class="theinfo">
+                        <div class="infochude">
+                            <h3>Địa Chỉ</h3>
+                            <p>Thành phố Hồ Chí Minh, Việt Nam</p>
+                        </div>
+                    </div>
+
+                    <div class="theinfo">
+                        <div class="infochude">
+                            <h3>Điện Thoại</h3>
+                            <p>+84 12 3456 7890</p>
+                            <p>Thứ 2 - Thứ 6</p>
+                        </div>
+                    </div>
+
+                    <div class="theinfo">
+                        <div class="infochude">
+                            <h3>Email</h3>
+                            <p>support@anatomyexplorer.edu.vn</p>
+                            <p>info@anatomyexplorer.edu.vn</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lienheformcontainer">
+                    <div class="formheader">
+                        <h2>Gửi Tin Nhắn Cho Chúng Tôi</h2>
+                        <p class="formtieude">Điền vào biểu mẫu dưới đây và chúng tôi sẽ phản hồi trong thời gian sớm nhất</p>
+                    </div>
+                    
+                    <form class="lienheform">
+                        <div class="formgroup">
+                            <label for="name">Họ và Tên</label>
+                            <input type="text" id="name" name="name" required placeholder="Nhập họ và tên của bạn">
+                        </div>
+
+                        <div class="formgroup">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Nhập địa chỉ email">
+                        </div>
+
+                        <div class="formgroup">
+                            <label for="subject">Tiêu Đề</label>
+                            <input type="text" id="subject" name="subject" placeholder="Nhập tiêu đề tin nhắn">
+                        </div>
+
+                        <div class="formgroup">
+                            <label for="message">Nội Dung Tin Nhắn</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Nhập nội dung tin nhắn của bạn..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submitbtn">Gửi Tin Nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footercontent">
+            <div class="footerbrand">AnatomyExplorer</div>
+            <p class="footerchude">Nền tảng học tập giải phẫu học trực tuyến, cung cấp kiến thức toàn diện về cấu trúc cơ thể người.</p>
+            <div class="footertieude">&copy; CuoiKhoaAnatomyExplorer 2026. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.lienheform').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            alert(`Cảm ơn ${name}! Tin nhắn của bạn đã được gửi thành công. Chúng tôi sẽ phản hồi qua email: ${email} trong thời gian sớm nhất.`);
+            
+            this.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,3 +1,5 @@
+/* Giữ nguyên tất cả CSS cũ */
+
 * {
     margin: 0;
     padding: 0;
@@ -54,6 +56,8 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu {
     display: flex;
     list-style: none;
+    flex: 1;
+    justify-content: center;
 }
 
 .nav-item {
@@ -83,6 +87,44 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #2a6e3f;
     border-radius: 2px;
 }
+
+
+.logout-container {
+    display: flex;
+    align-items: center;
+}
+
+.logout-btn {
+    background-color: #2a6e3f;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.logout-btn i {
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+.logout-btn:hover {
+    background-color: #1a472a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(42, 110, 63, 0.2);
+    border-color: #ff7e5f;
+}
+
+.logout-btn:active {
+    transform: translateY(0);
+}
+
+
 
 .main-content {
     flex: 1;
@@ -235,6 +277,17 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 5px;
     }
     
+    /* Responsive cho nút logout */
+    .logout-container {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .logout-btn {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+    
     .main-content {
         padding: 140px 20px 40px;
     }
@@ -272,6 +325,11 @@ h1, h2, h3, h4, h5, h6 {
     
     .nav-item {
         margin: 5px 0;
+    }
+    
+    .logout-btn {
+        padding: 5px 12px;
+        font-size: 0.85rem;
     }
     
     .hero-title {

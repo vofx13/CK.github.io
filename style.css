@@ -10,27 +10,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(image.png);
-    animation: gradientBG 15s ease infinite;
+    background: url(anh/image.png);
     overflow: hidden;
     padding: 20px;
     background-size: 150% 150%;
 }
 
 
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
 
 .glass-container {
     position: relative;
